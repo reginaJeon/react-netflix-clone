@@ -23,7 +23,7 @@ export const Nav = () => {
     <nav className={`nav ${show && "nav__black"}`}>
         <img
             alt="Netflix logo"
-            src="https://i.namu.wiki/i/3Z-ATH8Xfe9Y_1uGnUM9AfvVT35ZFt0SvKfDXMPGwnGLdmot3_x4Igwcwajl1OEabUGFHTRQ2ZbJaWtVH9ibiw.svg"
+            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_official_logo_icon_168085.png"
             className='nav__logo'
             onClick={()=>window.location.reload()}
         />
