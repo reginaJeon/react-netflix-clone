@@ -4,6 +4,7 @@ import { Nav } from './components/Nav';
 import Banner from './components/Banner';
 import Row from './components/Row';
 import { requests } from './api/requests';
+import Footer from './components/Footer';
 
 function App() {
   console.log("app::::requests:::"+requests.fetchNetfilxOriginals)
@@ -38,6 +39,7 @@ function App() {
         id="CM"
         fetchUrl={requests.fetchComedyMovies}
       />
+      <Footer/>
     </div>
   )
 }
