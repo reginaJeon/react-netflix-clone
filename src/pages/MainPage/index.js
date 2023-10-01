@@ -7,7 +7,7 @@ export default function MainPage() {
   
     console.log("app::::requests:::"+requests.fetchNetfilxOriginals);
     return (
-    <div>        
+    <div>
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"

@@ -1,9 +1,6 @@
 import React from 'react'
 import './App.css';
-import { Nav } from './components/Nav';
-import Banner from './components/Banner';
-import Row from './components/Row';
-import { requests } from './api/requests';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import MainPage from './pages/MainPage';
@@ -22,19 +19,19 @@ const Layout = () => {
       <Footer/>
     </div>
   )
-}
+};
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Routes>
-        <Route path='/' element={<Layout/>}></Route>
-        <Route index element={<MainPage/>}></Route>
-        <Route path=':movieId' element={<DetailPage/>}></Route>
-        <Route index element={<SearchPage/>}></Route>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<MainPage/>}/>
+          <Route path=':movieId' element={<DetailPage/>}/>
+          <Route path="search" element={<SearchPage/>}/>
+        </Route>
       </Routes>
-
     </div>
   )
 }
