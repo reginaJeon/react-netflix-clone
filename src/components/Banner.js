@@ -27,7 +27,7 @@ export default function Banner() {
       setMovie(movieDetail);
 
       console.log(movieDetail); //아. data밑에 나오는 정보들을 다 movieDetail이라는 명칭으로 불러와서 써라...
-      console.log("video ::"+ movieDetail.videos.results.length); //video가 있어야, 버튼 눌렀을때 key값이 있어서 에러가 나지 않음
+      console.log("video ::", movieDetail.videos.results.length); //video가 있어야, 버튼 눌렀을때 key값이 있어서 에러가 나지 않음
     };
 
     const truncate = (str, n) =>{
